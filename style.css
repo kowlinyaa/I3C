@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    color: #e0e0e0;
+    max-width: 100%;
+}
+
+.top {
+    background-color: rgba(251, 234, 195, 0.82);
+    position: relative;
+    min-height: 100vh;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    border-bottom: solid #e8d8b3 2px ;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+.top_logo {
+    width: 2.7rem;     
+}
+
+.name_img {
+    width: 4rem;
+    padding-bottom: 0.35rem;
+}
+
+.nav_bar p {
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    color: rgb(115, 117, 119);
+    font-size: 0.8rem;
+    font-weight: 650;
+}
+
+.button{
+    text-decoration: none;
+    background-color:rgba(251, 234, 195, 0.82) ;
+    border: solid rgb(93, 92, 92) 2px;
+    padding: 5px 13px;
+    border-radius: 20rem;
+    font-size: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    color: rgb(93, 93, 93);
+    margin-left: auto;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}  
+
+.button:hover{
+    background-color: rgb(93, 93, 93);
+    color: rgba(251, 234, 195, 0.82);
+}
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    text-align: center;
+}
+.top_line{
+    color:#964efc;
+    padding: 40px 0 0 0;
+}
+
+.home h1{
+    color: black;
+    font-size: 3rem;
+}
+.home h1 em {
+    font-style: normal;
+    color: #964efc; 
+}
+
+.tagline{
+    color: gray;
+}
+
+.circlebotton{
+    position: relative;
+    width: 40rem;
+    max-width: 90%;
+}
+
+.center_img {
+    width: 40rem;
+}
+
+
+.node {
+    position: absolute;
+    width: 2.7rem;
+    height: 2.7rem;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.node:hover {
+    background: rgba(150, 78, 252, 0.55); 
+    box-shadow: 0 0 50px 6px rgba(150, 72, 252, 0.6); 
+    transform: translate(-50%, -50%) scale(1.15);       
+}
+
+.about_label {
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #551A8B;
+}
+
+.team_label{
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #551A8B;
+}
+
+.event_label{
+    position: absolute;
+    bottom: -53%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #551A8B;
+}
+
+.projects_label{
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #551A8B;
+}
+
+.small_node{
+    position: absolute;
+    width: 2.2rem;
+    height: 2.2rem;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.small_node:hover {
+    background: rgba(150, 78, 252, 0.55); 
+    box-shadow: 0 0 50px 6px rgba(150, 72, 252, 0.6); 
+    transform: translate(-50%, -50%) scale(1.15);       
+}
+
+
+.social_label{
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #551A8B;
+}
+
+.journey_label{
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #551A8B;
+}
+
+.about{
+    background-color: #fdf8ec;
+}
+
+.inner_about{
+    padding: 6rem 12rem 2rem 12rem;
+}
+
+.inner_about h4{
+    color:#964efc;
+}
+h4 em{
+    color: #9A6BFF;
+    text-shadow:
+        0 0 6px rgba(150, 78, 252, 0.9),
+        0 0 14px rgba(150, 78, 252, 0.7),
+        0 0 28px rgba(150, 78, 252, 0.5);
+}
+.home p{
+    color: rgb(68, 67, 67);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 2%;
+    
+}
+
+.about_tag{
+    color: black;
+    font-size: 2.3rem;
+    font-weight: 600;
+    padding: 1rem 0 0 0.3rem;
+    line-height: 2.9rem;
+}
+
+.about_description{
+    color: rgb(116, 115, 115);
+    font-size: 1rem;
+    padding: 1rem 0 0 0.3rem;
+    line-height: 1.5rem;
+}
+
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.8rem 0.0rem 0 0.0rem;
+    
+}
+
+.about_box{
+    height: 11rem;
+    width: 22rem;
+    background-color: rgba(251, 234, 195, 0.82);
+    border-radius: 1.125rem;
+    border: solid #551A8B 2px ;
+}
+
+.about_box h3{
+    color: black;
+    padding: 1.5rem 0 0 1.3rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.about_box p{
+    color: rgb(94, 94, 94);
+    padding: 0.5rem 0 0 1.3rem;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.35rem;
+}
+
+.about_box .pages{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    /* position: relative; */
+    /* padding: 1.2rem 0.4rem 0rem 16rem; */
+    margin-top: 1.2rem;
+    margin-left: 14rem;
+    
+}
+
+.page_dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(58, 58, 58);
+    gap: 0.7rem;
+    font-size: 1rem;
+    padding-top: 0rem;
+    margin-top: -1.3rem;
+}
+
+.page_dots a{
+    width: 1.2rem;
+    border-radius: 10rem;
+    text-align: center;
+    transition: transform 0.2s ease;
+    
+}
+
+.page_dots a:hover{
+    cursor: pointer;
+    background: rgba(251, 199, 78, 0.4);
+    transform: scale(1.20);
+}
