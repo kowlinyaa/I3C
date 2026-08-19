@@ -13,17 +13,24 @@ body {
 }
 
 .top {
-    background-color: rgba(251, 234, 195, 0.82);
+    background-color: rgba(253, 236, 198, 1);
     position: relative;
     min-height: 100vh;
+    border-bottom: solid  rgb(223, 219, 152) 1px;
 }
 
 .nav_bar {
+    position: relative;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 2rem;
+    gap: 0.675rem;
+    padding: 0.0rem 1.8rem;
+    height: 4rem;
     border-bottom: solid #e8d8b3 2px ;
+    position: sticky;
+    top: 0%;
+    background-color: rgba(251, 234, 195, 1);
+    z-index: 69;
 }
 
 .text{
@@ -31,24 +38,24 @@ body {
     flex-direction: column;
     justify-content: start;
     align-items: start;
-    
+
 }
 
 .top_logo {
-    width: 2.7rem;     
+    width: 2.43rem;     
 }
 
 .name_img {
-    width: 4rem;
-    padding-bottom: 0.35rem;
+    width: 3.6rem;
+    padding-bottom: 0.315rem;
 }
 
 .nav_bar p {
-    font-size: 0.7rem;
-    letter-spacing: 0.05em;
+    font-size: 0.63rem;
+    letter-spacing: 0.045em;
     white-space: nowrap;
     color: rgb(115, 117, 119);
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     font-weight: 650;
 }
 
@@ -57,8 +64,8 @@ body {
     background-color:rgba(251, 234, 195, 0.82) ;
     border: solid rgb(93, 92, 92) 2px;
     padding: 5px 13px;
-    border-radius: 20rem;
-    font-size: 1rem;
+    border-radius: 18rem;
+    font-size: 0.9rem;
     font-family: 'JetBrains Mono', monospace;
     color: rgb(93, 93, 93);
     margin-left: auto;
@@ -76,7 +83,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0.75rem;
+    gap: 0.675rem;
     text-align: center;
 }
 .top_line{
@@ -86,7 +93,7 @@ body {
 
 .home h1{
     color: black;
-    font-size: 3rem;
+    font-size: 2.7rem;
 }
 .home h1 em {
     font-style: normal;
@@ -99,19 +106,19 @@ body {
 
 .circlebotton{
     position: relative;
-    width: 40rem;
+    width: 36rem;
     max-width: 90%;
 }
 
 .center_img {
-    width: 40rem;
+    width: 36rem;
 }
 
 
 .node {
     position: absolute;
-    width: 2.7rem;
-    height: 2.7rem;
+    width: 2.43rem;
+    height: 2.43rem;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     transition: all 0.2s ease;
@@ -129,7 +136,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #551A8B;
 }
@@ -140,7 +147,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #551A8B;
 }
@@ -151,7 +158,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #551A8B;
 }
@@ -162,15 +169,15 @@ body {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #551A8B;
 }
 
 .small_node{
     position: absolute;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 1.98rem;
+    height: 1.98rem;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     transition: all 0.2s ease;
@@ -189,7 +196,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #551A8B;
 }
@@ -200,21 +207,25 @@ body {
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: #551A8B;
 }
 
 .about{
     background-color: #fdf8ec;
+    border-bottom: solid  rgb(223, 219, 152) 1px;
+    height: calc(100vh - 4rem);
+    scroll-margin-top: 4rem;
 }
 
 .inner_about{
-    padding: 6rem 12rem 2rem 12rem;
+    padding: 6rem 10.8rem 1.8rem 10.8rem;
 }
 
 .inner_about h4{
     color:#964efc;
+    font-family: JetBrains Mono', monospace;
 }
 h4 em{
     color: #9A6BFF;
@@ -226,24 +237,24 @@ h4 em{
 .home p{
     color: rgb(68, 67, 67);
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.9rem;
+    font-size: 0.81rem;
     position: absolute;
     bottom: 2%;
     
 }
 
-.about_tag{
+.tag{
     color: black;
     font-size: 2.3rem;
     font-weight: 600;
-    padding: 1rem 0 0 0.3rem;
-    line-height: 2.9rem;
+    padding: 0.9rem 0 0 0.27rem;
+    line-height: 2.66rem;
 }
 
-.about_description{
+.description{
     color: rgb(116, 115, 115);
     font-size: 1rem;
-    padding: 1rem 0 0 0.3rem;
+    padding: 1rem 0 0 0.27rem;
     line-height: 1.5rem;
 }
 
@@ -251,39 +262,40 @@ h4 em{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.8rem 0.0rem 0 0.0rem;
+    padding: 2.52rem 0.0rem 0 0.0rem;
     
 }
 
 .about_box{
     height: 11rem;
     width: 22rem;
-    background-color: rgba(251, 234, 195, 0.82);
+    background-color: #FDF2D9;
     border-radius: 1.125rem;
     border: solid #551A8B 2px ;
 }
 
 .about_box h3{
     color: black;
-    padding: 1.5rem 0 0 1.3rem;
+    padding: 1.35rem 0 0 1.17rem;
     font-family: 'Space Grotesk', sans-serif;
 }
 
 .about_box p{
     color: rgb(94, 94, 94);
-    padding: 0.5rem 0 0 1.3rem;
+    padding: 0.45rem 0 0 1.17rem;
     font-family: 'Inter', sans-serif;
-    line-height: 1.35rem;
+    line-height: 1.215rem;
+    font-size: 1rem;
 }
 
 .about_box .pages{
     color: black;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     /* position: relative; */
     /* padding: 1.2rem 0.4rem 0rem 16rem; */
-    margin-top: 1.2rem;
-    margin-left: 14rem;
+    margin-top: 1.08rem;
+    margin-left: 12.6rem;
     
 }
 
@@ -292,15 +304,15 @@ h4 em{
     align-items: center;
     justify-content: center;
     color: rgb(58, 58, 58);
-    gap: 0.7rem;
-    font-size: 1rem;
+    gap: 0.63rem;
+    font-size: 0.9rem;
     padding-top: 0rem;
-    margin-top: -1.3rem;
+    margin-top: -1.17rem;
 }
 
 .page_dots a{
-    width: 1.2rem;
-    border-radius: 10rem;
+    width: 1.08rem;
+    border-radius: 9rem;
     text-align: center;
     transition: transform 0.2s ease;
     
@@ -311,3 +323,80 @@ h4 em{
     background: rgba(251, 199, 78, 0.4);
     transform: scale(1.20);
 }
+
+.journey{
+    background-color: rgba(253, 236, 198);
+    height: calc(100vh - 4rem);
+    scroll-margin-top: 4rem;
+}
+
+.inner_journey{
+    padding: 5.4rem 10.8rem 1.8rem 10.8rem;
+}
+
+.inner_journey h4{
+    color:#964efc;
+    font-family: JetBrains Mono', monospace;
+}
+
+.steps{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: solid grey 0.9px;
+    border-radius: 1.8rem;
+    margin-top: 3.6rem;
+    height: 13.5rem;
+    color: black;
+}
+
+
+
+.idea{ 
+    flex: 1;
+    background-color: #FDF2D9;
+    height: 100%;
+    border-top-left-radius: 1.8rem;
+    border-bottom-left-radius: 1.8rem;
+    padding: 2.25rem 0rem 0rem 2.7rem;
+}
+
+.step_describe{
+    padding-top: 0.63rem;
+    color: rgb(83, 82, 82);
+    line-height: 1.44rem;
+    font-size: 0.9rem;
+}
+
+.stage_head{
+    padding-top: 0.63rem;
+    font-size: 1.25rem;
+}
+
+
+.innovation{
+    flex: 1;
+    background-color: #D7BFFF;
+    height: 100%;
+    padding: 2.25rem 0rem 0rem 2.7rem;
+    border-left: solid  1px black;
+}
+
+
+
+.incubation{
+    flex: 1;
+    background-color:#241531;
+    height: 100%;
+    border-top-right-radius: 1.8rem;
+    border-bottom-right-radius: 1.8rem;
+    padding: 2.25rem 0rem 0rem 2.7rem;
+    color: rgba(253, 236, 198);
+}
+
+.incubation p{
+    color: rgba(253, 236, 198);
+    font-size: 0.9rem;
+}
+
